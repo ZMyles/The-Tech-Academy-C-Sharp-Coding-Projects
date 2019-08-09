@@ -1,0 +1,11 @@
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\bin\Debug\netcoreapp2.1\TwentyOne.deps.json
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\bin\Debug\netcoreapp2.1\TwentyOne.runtimeconfig.json
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\bin\Debug\netcoreapp2.1\TwentyOne.runtimeconfig.dev.json
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\bin\Debug\netcoreapp2.1\TwentyOne.dll
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\bin\Debug\netcoreapp2.1\TwentyOne.pdb
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\obj\Debug\netcoreapp2.1\TwentyOne.csprojAssemblyReference.cache
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\obj\Debug\netcoreapp2.1\TwentyOne.csproj.CoreCompileInputs.cache
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\obj\Debug\netcoreapp2.1\TwentyOne.AssemblyInfoInputs.cache
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\obj\Debug\netcoreapp2.1\TwentyOne.AssemblyInfo.cs
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\obj\Debug\netcoreapp2.1\TwentyOne.dll
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\TwentyOne\obj\Debug\netcoreapp2.1\TwentyOne.pdb
