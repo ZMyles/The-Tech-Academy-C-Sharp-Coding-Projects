@@ -1,0 +1,60 @@
+﻿<div>
+
+    <div class="card-body">
+        @using (Html.BeginForm("Quote", "Home", FormMethod.Post))
+        {
+        <div class="row">
+            <div class="form-group ">
+                <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+            </div>
+            <div class="form-group ">
+                <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+            </div>
+            <div class="form-group ">
+                <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+            </div>
+
+            <!--   =========================================  -->
+
+            <div class="form-group ">
+                <input id="DateOfBirth" name="DateOfBirth" type="text" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group ">
+                <input id="Year" name="Year" type="number" class="form-control" placeholder="Year of the car" />
+            </div>
+            <div class="form-group ">
+                <input name="Make" type="text" class="form-control" placeholder="Vehicle Make" />
+            </div>
+            <div>
+                <input name="Model" type="text" class="form-control" placeholder="Vehicle Model" />
+            </div>
+
+            <!--   =========================================  -->
+
+            <span>Have you ever had a DUI?</span>
+            <div>
+                <input name="DUI" type="text" class="form-control" />
+            </div>
+
+            <span>How many speeding tickets do you have?</span>
+            <div>
+                <input name="Tickets" type="text" class="form-control" />
+            </div>
+
+            <span>Would you like full coverage or liability?</span>
+            <div>
+                <input name="CoverOrLiaility" type="text" class="form-control" />
+            </div>
+
+
+            <button type="submit">Submit</button>
+
+
+        </div>
+        }
+
+    </div>
+
+
+
+</div>

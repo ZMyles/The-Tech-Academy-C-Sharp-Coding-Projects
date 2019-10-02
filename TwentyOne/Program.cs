@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+
 
 namespace TwentyOne
 {
@@ -10,30 +12,31 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            Deck deck = new Deck();
-            deck = Shuffle(deck);
-            
-            foreach(Card card in deck.Cards)
-            {
-                Console.WriteLine(card.Face + " of " + card.Suit);
-            }
-            Console.WriteLine(deck.Cards.Count);
-            Console.ReadLine();
-        }
+            string text = "";
+            File.WriteAllText(@"C:\Desktop\log.txt", text);
 
-        public static Deck Shuffle(Deck deck)
-        {
-            List<Card> TempList = new List<Card>();
-            Random random = new Random();
 
-            while (deck.Cards.Count > 0)
+            Console.WriteLine("Welcome to the Grand Hotel and Casino. Lets start by telling me your name.");
+            string playerName = Console.ReadLine();
+            Console.WriteLine("How much money did you bring today?");
+            int bank = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
+            string answer = Console.ReadLine().ToLower();
+            if (answer == "Yes" || answer == "yeah" || answer == "y" || answer == "ya")
             {
-                int randomIndex = random.Next(0, deck.Cards.Count);
-                TempList.Add(deck.Cards[randomIndex]);
-                deck.Cards.RemoveAt(randomIndex);
+                Player player = new Player(playerName, bank);
+                Game game = new TwentyOneGame();
+                game += player;
+                player.isActivelyPlaying = true;
+                while (player.isActivelyPlaying && player.Balance > 0)
+                {
+                    game.Play();
+                }
+                game -= player;
+                Console.WriteLine("Thank you for playing!");
             }
-            deck.Cards = TempList;
-            return deck;
+            Console.WriteLine("Feel free to look around the casino. Bye for now.");
+            Console.Read();
         }
     }
 }

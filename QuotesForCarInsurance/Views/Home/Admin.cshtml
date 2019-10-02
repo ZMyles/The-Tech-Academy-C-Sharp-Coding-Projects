@@ -1,0 +1,43 @@
+﻿@using QuotesForCarInsurance.Models
+@model List<Quotes>
+
+<h2>Admin</h2>
+
+<div class="row row-no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-1 mx-auto shadow">
+        <div class="card-header text-center">
+            
+        </div> 
+        <div class="card-body">
+            @foreach (var quote in Model)
+            {
+
+            <div class="row">
+                <div class="col">
+                    <span>Issued Quotes:</span>
+                </div>
+
+                <div class="col">
+                    <span>FirstName:</span>
+                    @quote.FirstName
+                </div>
+
+                <div class="col">
+                    <span>LastName:</span>
+                    @quote.LastName
+                </div>
+
+
+                <div class="col">
+                    <span>Email:</span>
+                    @quote.EmailAddress
+                </div>
+
+               
+            </div>
+            <br />
+            }
+        </div>
+    </div>
+</div>
+
