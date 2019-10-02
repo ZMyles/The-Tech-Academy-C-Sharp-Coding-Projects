@@ -60,40 +60,31 @@ namespace QuotesForCarInsurance.Controllers
                     connection.Close();
                 }
 
+
+                int baseAmount = 50;
+                int userAge = Convert.ToInt32(dateOfBirth);
+                int vehicleYear = Convert.ToInt32(year);
+
+                if (userAge < 25 || userAge > 100)
+                {
+                   baseAmount += 25;
+
+                   return baseAmount;
+                    
+                }
+                else if (userAge < 18)
+                {
+                    baseAmount += 100;
+                    return baseAmount;
+                    
+                }
+
+
                 return View("QuoteInfo");
             }
 
         }
 
-        [HttpPost]
-             public ActionResult QuoteInfo()
-        {
-
-
-     //==========================================================================
-
-            //CALCULATING THE QUOTE COAST FOR USER
-
-            //int baseAmount = 50;
-            //int userAge = Convert.ToInt32(dateOfBirth);
-            //int vehicleYear = Convert.ToInt32(year);
-
-            //if (userAge < 25 || userAge > 100)
-            //{
-            //    int monthlyTotal = baseAmount + 25;
-            //    return monthlyTotal;
-            //}
-            //else if (userAge < 18)
-            //{
-            //    int monthlytotal = baseAmount + 100;
-            //    return monthlyTotal;
-            //}
-
-       //==========================================================================
-            
-            return View("QuoteInfo");
-
-        }
 
         [HttpGet]
         public ActionResult Admin()
