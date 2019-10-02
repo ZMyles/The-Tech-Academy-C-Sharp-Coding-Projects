@@ -60,7 +60,9 @@ namespace QuotesForCarInsurance.Controllers
                     connection.Close();
                 }
 
-
+                //==========================================
+                // Calculations ======================================
+                //===========================================
                 int baseAmount = 50;
                 int userAge = Convert.ToInt32(dateOfBirth);
                 int vehicleYear = Convert.ToInt32(year);
@@ -69,14 +71,26 @@ namespace QuotesForCarInsurance.Controllers
                 {
                    baseAmount += 25;
 
-                   return baseAmount;
-                    
+                   return baseAmount; //Cannot implicitly convert type 'int' to 'System.Web.Mvc.ActionResult'
+
                 }
                 else if (userAge < 18)
                 {
                     baseAmount += 100;
-                    return baseAmount;
-                    
+                    return baseAmount; //Cannot implicitly convert type 'int' to 'System.Web.Mvc.ActionResult'
+
+                }
+
+                if (vehicleYear > 2000 || vehicleYear < 2015)
+                {
+                    baseAmount += 25;
+                    return baseAmount; //Cannot implicitly convert type 'int' to 'System.Web.Mvc.ActionResult'
+                }
+
+                if (make == "Porsche" || model == "911 Carrera")
+                {
+                    baseAmount += 25;
+                    return baseAmount; //Cannot implicitly convert type 'int' to 'System.Web.Mvc.ActionResult'
                 }
 
 
