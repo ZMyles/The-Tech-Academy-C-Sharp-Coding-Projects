@@ -1,7 +1,10 @@
-﻿@using QuotesForCarInsurance.Models
+﻿
+@{ 
+    var data = ViewBag.Message;
+}
 
+<h2>Your Total</h2>
+<br />
+<Span>Your Monthy quote is: $@data.TotalAmount a month</Span>
 
-<h2>QuoteInfo</h2>
-
-<p>Test</p>
 

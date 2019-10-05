@@ -16,7 +16,8 @@ namespace QuotesForCarInsurance.Models
         public string Model { get; set; }
         public string Dui { get; set; }
         public string Tickets { get; set; }
-        public string CoverOrLiaility { get; set; }
+        public string CoverOrLiability { get; set; }
         public string Year { get; set; }
+        public string TotalAmount { get; set; }
     }
 }

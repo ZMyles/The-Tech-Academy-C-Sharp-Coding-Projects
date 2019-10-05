@@ -6,7 +6,9 @@
 <div class="row row-no-gutters m-3">
     <div class="card col-sm-12 col-md-10 col-lg-1 mx-auto shadow">
         <div class="card-header text-center">
-            
+
+           
+
         </div> 
         <div class="card-body">
             @foreach (var quote in Model)
@@ -15,6 +17,7 @@
             <div class="row">
                 <div class="col">
                     <span>Issued Quotes:</span>
+                    @quote.TotalAmount
                 </div>
 
                 <div class="col">

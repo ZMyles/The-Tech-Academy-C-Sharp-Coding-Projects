@@ -74,3 +74,7 @@ C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\obj\Debug\Q
 C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\obj\Debug\QuotesForCarInsurance.csproj.CopyComplete
 C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\obj\Debug\QuotesForCarInsurance.dll
 C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\obj\Debug\QuotesForCarInsurance.pdb
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\bin\EntityFramework.dll
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\bin\EntityFramework.SqlServer.dll
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\bin\EntityFramework.xml
+C:\Users\Zavier Myles\Desktop\Projects-C-Sharp\QuotesForCarInsurance\bin\EntityFramework.SqlServer.xml
